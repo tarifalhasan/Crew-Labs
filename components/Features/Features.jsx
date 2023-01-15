@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
-import blockchainImg from "../images/feature/icon1.svg";
-import icon2 from "../images/feature/icon2.svg";
-import icon3 from "../images/feature/icon3.svg";
+import blockchainImg from "../images/feature/Icon1.svg";
+import icon2 from "../images/feature/Icon2.svg";
+import icon3 from "../images/feature/Icon3.svg";
 import Card from "./Card";
 const Features = () => {
   return (
