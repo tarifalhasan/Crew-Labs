@@ -1,6 +1,8 @@
 import Button from "@/components/Button/Button";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/Hero.module.css";
+import wordldImg from "../../images/world.png";
 const Hero = () => {
   return (
     <div className="pt-0 pb-10 md:pt-10">
@@ -27,7 +29,9 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className={`${styles.rightSide} hidden md:block`}></div>
+        <div className={` hidden md:block`}>
+          <Image src={wordldImg} alt="world" />
+        </div>
       </div>
     </div>
   );

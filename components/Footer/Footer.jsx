@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import Image from "next/image";
+import Link from "next/link";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import styles from "../../styles/Footer.module.css";
 import Logo from "../images/logo.png";
@@ -73,7 +72,7 @@ const Footer = () => {
           <ul className="flex gap-3">
             {links.map((link) => (
               <li key={link.id}>
-                <Link href={link.href}>{link.name} . </Link>
+                <Link href={link.href}>{link.name}</Link>
               </li>
             ))}
           </ul>

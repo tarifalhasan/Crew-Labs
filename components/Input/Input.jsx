@@ -8,7 +8,7 @@ const Input = ({ btnName, placeholder, height }) => {
         type="email"
         placeholder="Enter you email address"
       />
-      {btnName && <Button width="w-[81px]" name={btnName} />}
+      {btnName && <Button name={btnName} />}
     </div>
   );
 };
