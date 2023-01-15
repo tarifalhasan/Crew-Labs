@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Team.module.css";
-import linkedin from "../images/linkedin.png";
 import Anne from "../images/team/Anne.png";
 import Cassey from "../images/team/Cassey.png";
 import Christian from "../images/team/Christian.png";
 import Dan from "../images/team/Dan.png";
 import Jack from "../images/team/jack.png";
+import linkedin from "../images/team/linkedien.svg";
 import Steve from "../images/team/Steve.png";
+import twitter from "../images/team/twitter.svg";
 import Veronica from "../images/team/Veronica.png";
 import Wanda from "../images/team/Wanda.png";
-import twitter from "../images/twitter.png";
 
 const Team = () => {
   const teamMembers = [

@@ -1,10 +1,10 @@
-import image8 from "../images/services/Bring your team in channels.png";
-import image3 from "../images/services/Control everything in one place.png";
-import image5 from "../images/services/Live Customer Support.png";
-import image6 from "../images/services/Project Management.png";
-import image1 from "../images/services/Protect Your Data.png";
-import image2 from "../images/services/Super Smart Search.png";
-import image4 from "../images/services/Work better together.png";
+import image1 from "../images/services/icon1.svg";
+import image2 from "../images/services/icon2.svg";
+import image3 from "../images/services/icon3.svg";
+import image4 from "../images/services/icon4.svg";
+import image5 from "../images/services/icon5.svg";
+import image6 from "../images/services/icon6.svg";
+import image8 from "../images/services/icon8.svg";
 
 const servicesData = [
     {    id : 1,

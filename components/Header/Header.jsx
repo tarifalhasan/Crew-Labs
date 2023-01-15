@@ -4,7 +4,7 @@ import Hero from "./Hero/Hero";
 import Navbar from "./Navbar/Navbar";
 const Header = () => {
   return (
-    <main className="relative">
+    <main>
       <div className={styles.gredient}>
         <Navbar />
         <Hero />

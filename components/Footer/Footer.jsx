@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import styles from "../../styles/Footer.module.css";
 import Logo from "../images/logo.png";
+import linkedeinIcon from "../images/team/linkedien.svg";
+import twiterIcon from "../images/team/twitter.svg";
 import Input from "../Input/Input";
 const Footer = () => {
   const links = [
@@ -24,10 +25,10 @@ const Footer = () => {
           <p className={styles.pragraph}>The Future Blockchain.</p>
           <div className="social_icon flex py-2 items-center gap-2 text-xl text-[#AEAFB4]">
             <Link href="https://linkdein.com">
-              <FaLinkedinIn />
+              <Image src={linkedeinIcon} alt="linkedein" />
             </Link>
             <Link href="https://linkdein.com">
-              <FaInstagram />
+              <Image src={twiterIcon} alt="linkedein" />
             </Link>
           </div>
         </div>

@@ -6,6 +6,7 @@ import Services from "@/components/Services/Services";
 import Sponsors from "@/components/Sponsors/Sponsors";
 import Team from "@/components/Team/Team";
 import Head from "next/head";
+import styles from "../styles/Header.module.css";
 export default function Home() {
   return (
     <>
@@ -16,13 +17,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Sponsors />
-      <Features />
-      <Services />
-      <Team />
-      <Contact />
-      <Footer />
+      <main className={styles.heading}>
+        <Header />
+        <Sponsors />
+        <Features />
+        <Services />
+        <Team />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 import data from "./data";
 const Sponsors = () => {
   return (
-    <div className="px-4 md:px-24">
+    <div className="px-4 md:px-24 pt-2 md:pt-10">
       <p className="title">
         Thousands of projects worldwide are using Crew Labs
       </p>

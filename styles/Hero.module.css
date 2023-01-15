@@ -26,8 +26,7 @@
   font-family: "Satoshi-Black";
   font-style: normal;
   font-weight: 900;
-  font-size: 77px;
-  line-height: 88px;
+
   /* or 100% */
 
   letter-spacing: -4px;
@@ -36,8 +35,28 @@
 }
 .subHeading {
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+
   line-height: 30px;
   color: #aeafb4;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  height: 47px;
+  background: linear-gradient(
+    265.56deg,
+    #1b66f9 -0.27%,
+    #1e68f6 -0.26%,
+    #004bdb 98.59%
+  );
+  border-radius: 29px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.shape {
 }

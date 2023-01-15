@@ -1,13 +1,12 @@
-import styles from "../../styles/Features.module.css";
 import Button from "../Button/Button";
-import blockchainImg from "../images/feature/blockchain.png";
-import icon2 from "../images/feature/icon2.png";
-import icon3 from "../images/feature/icon3.png";
+import blockchainImg from "../images/feature/icon1.svg";
+import icon2 from "../images/feature/icon2.svg";
+import icon3 from "../images/feature/icon3.svg";
 import Card from "./Card";
 const Features = () => {
   return (
     <div
-      className={`block md:flex items-center justify-between py-10 px-4 md:px-24 ${styles.features_right}`}
+      className={`block md:flex items-center justify-between py-10 px-4 md:px-24 `}
     >
       <div className={`basic-[47%] `}>
         <div className="block md:flex items-center gap-5 m-[10px] md:m-[45px]">
