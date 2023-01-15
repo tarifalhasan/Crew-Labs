@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2")
+      format("woff2"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff")
+      format("woff"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.logo {
+  width: 71px;
+  height: 24px;
+  font-family: "Satoshi-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+.pragraph {
+  font-family: "Satoshi-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  color: #aeafb4;
+}
+
+.copyright {
+  border-top: 1px solid #aeafb4;
+  padding: 20px 0px;
+}

@@ -1,0 +1,51 @@
+.gredient {
+  background: -webkit-linear-gradient(
+    297deg,
+    rgba(6, 11, 62, 0.63) 0%,
+    rgba(2, 9, 72, 0.85) 20%,
+    rgba(5, 13, 57, 0.55) 48%,
+    rgba(8, 13, 42, 0.24) 68%,
+    rgba(0, 0, 0, 0.24) 88%,
+    rgba(0, 0, 0, 0.24) 100%
+  );
+  background: -o-linear-gradient(
+    297deg,
+    rgba(6, 11, 62, 0.63) 0%,
+    rgba(2, 9, 72, 0.85) 20%,
+    rgba(5, 13, 57, 0.55) 48%,
+    rgba(8, 13, 42, 0.24) 68%,
+    rgba(0, 0, 0, 0.24) 88%,
+    rgba(0, 0, 0, 0.24) 100%
+  );
+  background: -ms-linear-gradient(
+    297deg,
+    rgba(6, 11, 62, 0.63) 0%,
+    rgba(2, 9, 72, 0.85) 20%,
+    rgba(5, 13, 57, 0.55) 48%,
+    rgba(8, 13, 42, 0.24) 68%,
+    rgba(0, 0, 0, 0.24) 88%,
+    rgba(0, 0, 0, 0.24) 100%
+  );
+  background: -moz-linear-gradient(
+    297deg,
+    rgba(6, 11, 62, 0.63) 0%,
+    rgba(2, 9, 72, 0.85) 20%,
+    rgba(5, 13, 57, 0.55) 48%,
+    rgba(8, 13, 42, 0.24) 68%,
+    rgba(0, 0, 0, 0.24) 88%,
+    rgba(0, 0, 0, 0.24) 100%
+  );
+  background: linear-gradient(
+    153deg,
+    rgba(6, 11, 62, 0.63) 0%,
+    rgba(2, 9, 72, 0.85) 20%,
+    rgba(5, 13, 57, 0.55) 48%,
+    rgba(8, 13, 42, 0.24) 68%,
+    rgba(0, 0, 0, 0.24) 88%,
+    rgba(0, 0, 0, 0.24) 100%
+  );
+}
+@media only screen and (max-width: 768px) {
+  .gredient {
+  }
+}

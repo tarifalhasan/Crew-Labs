@@ -1,0 +1,10 @@
+.inputGroup {
+  background: rgba(47, 50, 65, 0.5);
+  border: 1px solid #34384c;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 8px 8px 24px;
+  gap: 10px;
+}

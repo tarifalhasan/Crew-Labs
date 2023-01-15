@@ -1,0 +1,6 @@
+.CardStyle {
+  background: rgba(47, 50, 65, 0.5);
+  backdrop-filter: blur(6px);
+  margin: 0 auto;
+  border-radius: 12px;
+}

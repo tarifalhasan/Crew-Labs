@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost:wght@400;500&display=swap");
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2")
+      format("woff2"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff")
+      format("woff"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+.name {
+  font-family: "Satoshi-Bold";
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+}
+.role {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.75;
+}
+.redialGredient {
+  background: radial-gradient(
+    40.45% 40.45% at 50% 46.16%,
+    rgba(1, 9, 80, 0.9) 3.12%,
+    rgba(14, 17, 32, 0) 100%
+  );
+}
+.gradient {
+  /* background-image: url(../public/gredient-1.png); */
+  background: radial-gradient(
+    40.45% 40.45% at 50% 46.16%,
+    rgba(1, 9, 80, 0.9) 3.12%,
+    rgba(14, 17, 32, 0) 100%
+  );
+  position: absolute;
+  left: -545px;
+  right: 0;
+  width: 1551px;
+  height: 749px;
+  /* left: 0; */
+  top: 66px;
+  /* top: 3924px; */
+  z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  .gradient {
+    background: radial-gradient(
+      40.45% 40.45% at 50% 46.16%,
+      rgba(1, 9, 80, 0.9) 3.12%,
+      rgba(14, 17, 32, 0) 100%
+    );
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 1061px;
+    left: -76px;
+    top: -100px;
+    /* top: 3924px; */
+    overflow: hidden;
+    overflow-x: hidden;
+    z-index: -1;
+  }
+}

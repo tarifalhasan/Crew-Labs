@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2")
+      format("woff2"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff")
+      format("woff"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2")
+      format("woff2"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff")
+      format("woff"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.navLink {
+  font-family: "Satoshi-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+
+  letter-spacing: 0.25px;
+}
+.navLink:hover {
+  color: #f4f4f4;
+}
+.logo {
+  width: 81px;
+  height: 24px;
+  font-family: "Satoshi-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -1px;
+
+  color: #ffffff;
+}
