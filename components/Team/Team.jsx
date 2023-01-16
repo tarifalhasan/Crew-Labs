@@ -84,10 +84,10 @@ const Team = () => {
                   <p className={`${styles.role}`}>{item.role}</p>
                   <div className="icon flex items-center justify-center gap-3">
                     <Link href="/twitter">
-                      <Twitter />
+                      <Twitter className="text-2xl" />
                     </Link>
                     <Link href="/twitter">
-                      <Linkedin />
+                      <Linkedin className="text-2xl" />
                     </Link>
                   </div>
                 </div>

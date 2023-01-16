@@ -10,7 +10,7 @@ const Hero = () => {
             is <span className="text-[#004BDC] md:text-[36A6F6]">Fastest</span>
           </h2>
           <p
-            className={`${styles.subHeading} text-base py-4 w-full md:w-[90%] mx-auto`}
+            className={`${styles.subHeading} text-base py-4 w-full lg:w-[90%] mx-auto`}
           >
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC,
