@@ -90,7 +90,9 @@ body {
     );
   }
 }
-
+.amimated-time {
+  --animate-delay: 2s;
+}
 /* ------------------- */
 
 /**
@@ -98,47 +100,3 @@ body {
 * keyframe animatins
 * ========================
 **/
-
-.float-right {
-  animation: float-right 4.5s ease-in-out infinite;
-}
-.float-right {
-  animation: float-left 4.5s ease-in-out infinite;
-  width: 220px;
-  height: 220px;
-  -webkit-filter: blur(120px);
-  filter: blur(120px);
-  position: absolute;
-  top: 280px;
-  left: 0;
-  border-radius: 50%;
-  background-color: blue;
-  z-index: 1;
-}
-.float-right {
-  animation: float-right 4.5s ease-in-out infinite;
-}
-
-@keyframes float-right {
-  from {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(30vw, 15vw);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes float-left {
-  from {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-44vw, -10vw);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}

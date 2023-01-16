@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="pt-0 pb-[3rem] md:pt-10">
       <div className="px-12 md:px-24 grid grid-cols-1">
-        <div className="pt-4  text-left md:text-center  w-full md:w-[84%] mx-auto">
+        <div className="pt-4 text-left md:text-center  w-full md:w-[84%] mx-auto">
           <h2 className={`${styles.heading}`}>
             Blockchain <br className="block md:hidden" />
             is <span className="text-[#004BDC] md:text-[36A6F6]">Fastest</span>
