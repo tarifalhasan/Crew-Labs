@@ -6,7 +6,7 @@ import Card from "./Card";
 const Features = () => {
   return (
     <div
-      className={`block md:flex items-center  justify-between py-10 md:py-28 px-12 md:px-24 `}
+      className={`block md:flex items-center  justify-between py-10 md:py-28 px-6 md:px-24 `}
     >
       <div className={`basic-[47%] `}>
         <div className="block md:flex items-center gap-5 m-[10px] md:m-[45px]">
@@ -31,7 +31,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className="basis-[45%]	">
+      <div className="basis-[45%] px-3	">
         <h2 className=" text-[33px]">
           The fastest <br className="hidden md:block " /> blockchain{" "}
           <br className="hidden md:block " /> technology.

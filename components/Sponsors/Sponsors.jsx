@@ -7,7 +7,7 @@ const Sponsors = () => {
       </p>
       <div className="grid md:grid-cols-4 grid-cols-2 w-full md:w-[60%] mx-auto">
         {data.map((img) => (
-          <span>
+          <span className="mx-auto">
             <img.icon className="text-[9rem]" />
           </span>
         ))}

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="order-last  md:order-first">
           <Link
             href="/"
-            className={`flex items-center gap-[2px] text-lg items-center${styles.logo}`}
+            className={`flex items-center gap-0 md:gap-[2px] text-lg items-center${styles.logo}`}
           >
             <Logo className="text-xl" />
             <span>Crew Labs</span>

@@ -16,7 +16,7 @@ const Hero = () => {
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years.
           </p>
-          <div className="grid w-[75%] m-0 md:mx-auto md:w-[35%] grid-cols-2 items-center text-base py-14">
+          <div className="flex w-full m-0 md:mx-auto md:w-[40%]  items-center text-base py-14 gap-2">
             <div>
               <button className={`${styles.btn}`}>Get started now</button>
             </div>

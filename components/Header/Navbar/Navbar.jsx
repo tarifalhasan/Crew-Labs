@@ -70,11 +70,11 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`items-center  justify-between  w-full md:flex md:w-auto md:order-1 ${
+            className={`items-center  justify-between  w-full md:flex md:w-auto md:order-1 relative ${
               isOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium  ">
+            <ul className="flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent absolute width-[90vw] left-[-28px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium  ">
               {navLink.map((link) => (
                 <li
                   key={link.id}
