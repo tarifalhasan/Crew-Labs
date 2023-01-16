@@ -13,7 +13,7 @@ const Features = () => {
           <div className="grid grid-cols-1 gap-7">
             <Card />
           </div>
-          <div className="pt-8">
+          <div className="pt-8 ml-0 md:ml-[4.75rem]">
             <div
               className={`${styles.CardStyle} w-[100%] py-12 md:w-[100%] text-center`}
             >
@@ -31,12 +31,12 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className="basis-[45%] px-3	">
-        <h2 className="text-[23px] md:text-[33px] mt-10 md:mt-0">
-          The fastest <br className="hidden md:block " /> blockchain{" "}
+      <div className="basis-[45%] px-3 mt-14	">
+        <h2 className="features_title mt-10 md:mt-0">
+          The fastest <br className="hidden md:block " /> blockchain
           <br className="hidden md:block " /> technology.
         </h2>
-        <p className="text-[#AEAFB4] text-sm my-4">
+        <p className="text-[#AEAFB4] text-sm my-6">
           Lorem Ipsum is not simply random text. It has roots in a piece of
           classical Latin literature.
         </p>

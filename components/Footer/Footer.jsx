@@ -1,8 +1,8 @@
 import Link from "next/link";
 import styles from "../../styles/Footer.module.css";
 import Logo from "../images/crew logo.svg";
-import LlinkedeinIcon from "../images/team/linkedien.svg";
-import TwiterIcon from "../images/team/twitter.svg";
+import LlinkedeinIcon from "../images/Instagram.svg";
+import TwiterIcon from "../images/LinkedIn.svg";
 const Footer = () => {
   const links = [
     { name: "About", href: "/about", id: 1 },
@@ -11,14 +11,14 @@ const Footer = () => {
     { name: "Community", href: "/community", id: 4 },
   ];
   return (
-    <div className="px-6 md:px-24 pt-0 md:pt-12">
+    <div className="px-6 md:px-24 pt-5 md:pt-12">
       <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 ">
         <div className="order-last pb-5  md:order-first">
           <Link
             href="/"
             className={`flex items-center gap-0 md:gap-[2px] text-lg items-center${styles.logo}`}
           >
-            <Logo className="text-xl" />
+            <Logo className="text-4xl" />
             <span>Crew Labs</span>
           </Link>
           <p className={styles.pragraph}>The Future Blockchain.</p>
@@ -31,14 +31,14 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="pt-5 md:pt-0">
+        <div className="pt-5 w-[70%] md:pt-0">
           <Link href="/" className={`flex items-center${styles.logo}`}>
             <span>Quick menu.</span>
           </Link>
           <div className="pt-5">
             <div className="flex justify-between pb-4 text-[#AEAFB4]">
               <p>Collectibles</p>
-              <p>Wallets</p>
+              <p className="cardWallet">Wallets</p>
             </div>
             <div className="flex justify-between pb-4 text-[#AEAFB4]">
               <p>DeFi</p>
@@ -67,7 +67,7 @@ const Footer = () => {
             <div className="relative">
               <input
                 type="email"
-                className="block w-full p-4 pl-10 text-sm text-white border border-gray-300 rounded-lg  subscribeBtn"
+                className="block w-full p-4  text-sm text-white border border-gray-300 rounded-lg  subscribeBtn"
                 placeholder="Enter your Email"
                 required
               />
@@ -83,14 +83,17 @@ const Footer = () => {
       </main>
       {/* copy rigth police */}
 
-      <footer className=" bg-transparent rounded-lg  md:flex md:items-center md:justify-between md:p-6 ">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      <footer className="footer_border bg-transparent rounded-lg  md:flex md:items-center md:justify-between md:p-6 ">
+        <span className="footer_text block mt-4 md:mt-0">
           2023 © Crew Labs. All rights reserved.
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
           {links.map((link) => (
             <li key={link.id}>
-              <Link href={link.href} className="mr-4 hover:underline md:mr-6 ">
+              <Link
+                href={link.href}
+                className="mr-4 footer_text hover:underline md:mr-6 "
+              >
                 {link.name}
               </Link>
             </li>

@@ -3,7 +3,7 @@ import data from "./data";
 const Services = () => {
   return (
     <div
-      className={`px-[2rem] pt-6 md:pt-0 pb-24 md:px-[8rem] mx-auto ${styles.bg}`}
+      className={`px-[2rem] pt-10 md:pt-0 pb-24 md:px-[8rem] mx-auto ${styles.bg}`}
     >
       <div className=" px-4 md:px-20 mx-auto">
         <div className="heading pb-10">
@@ -14,7 +14,7 @@ const Services = () => {
       <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
         {data.map((item) => (
           <div key={item.id}>
-            <item.image className="text-4xl my-3" />
+            <item.image className="text-4xl my-1" />
             <p className={styles.title}>{item.title}</p>
             <div className={styles.line}></div>
             <small className={styles.description}>{item.descripetion}</small>

@@ -46,7 +46,7 @@
   /* Auto layout */
   display: flex;
   align-items: center;
-  padding: 12px 24px;
+  padding: 8px 8px 8px 9px;
   width: auto;
   height: 47px;
   background: linear-gradient(

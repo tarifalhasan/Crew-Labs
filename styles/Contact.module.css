@@ -27,17 +27,19 @@
   font-family: "Satoshi-Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 32px;
+  line-height: 32px;
   color: #ffffff;
 }
 .title {
   font-family: "Satoshi-medium";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
   color: #6e757c;
+  display: block;
+  margin: 12px 0;
 }
 .message {
   width: 100%;
@@ -47,7 +49,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 8px 8px 24px;
+  padding: 8px 8px 8px 9px;
   gap: 10px;
   outline: none;
 }
