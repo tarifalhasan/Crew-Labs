@@ -1,33 +1,33 @@
+import styles from "../../styles/Card.module.css";
 import Button from "../Button/Button";
-import blockchainImg from "../images/feature/Icon1.svg";
-import icon2 from "../images/feature/Icon2.svg";
-import icon3 from "../images/feature/Icon3.svg";
+
+import Icon3 from "../images/Crew Labs SVG/Shine-3.svg";
 import Card from "./Card";
 const Features = () => {
   return (
     <div
-      className={`block md:flex items-center justify-between py-10 px-4 md:px-24 `}
+      className={`block md:flex items-center  justify-between py-10 md:py-28 px-12 md:px-24 `}
     >
       <div className={`basic-[47%] `}>
         <div className="block md:flex items-center gap-5 m-[10px] md:m-[45px]">
           <div className="grid grid-cols-1 gap-7">
-            <Card
-              image={blockchainImg}
-              title="Connect Assets"
-              subTitle="Lorem Ipsum is not simply random text. It has roots in a piece of classical."
-            />
-            <Card
-              image={icon2}
-              title="Creator Friendly"
-              subTitle="Lorem Ipsum is not simply random text. It has roots in a piece of classical."
-            />
+            <Card />
           </div>
           <div className="pt-8">
-            <Card
-              image={icon3}
-              title="Fast transactions"
-              subTitle="Lorem Ipsum is not simply random text. It has roots in a piece of classical."
-            />
+            <div
+              className={`${styles.CardStyle} w-[100%] py-12 md:w-[100%] text-center`}
+            >
+              <div className="w-full md:w-[70%] mx-auto">
+                <div className={styles.cardIcon}>
+                  <Icon3 className="text-[3rem] mx-auto" />
+                </div>
+                <p className="py-4">Fast transactions</p>
+                <span className=" text-sm text-[#AEAFB4]">
+                  Lorem Ipsum is not simply random text. It has roots in a piece
+                  of classical.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -11,14 +11,14 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Satoshi-Bold";
-  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2")
+  font-family: "Satoshi-Light";
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2")
       format("woff2"),
-    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff")
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff")
       format("woff"),
-    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf")
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.ttf")
       format("truetype");
-  font-weight: 700;
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
@@ -26,18 +26,25 @@
   font-family: "Satoshi-Black";
   font-style: normal;
   font-weight: 900;
-
-  /* or 100% */
-
-  letter-spacing: -4px;
-
+  font-size: 96px;
+  line-height: 130px;
+  letter-spacing: -8px;
   color: #ffffff;
 }
 .subHeading {
-  font-style: normal;
+  width: 757px;
+  height: 60px;
+  left: 342px;
+  top: 308px;
 
+  font-family: "Satoshi-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 30px;
-  color: #aeafb4;
+  text-align: center;
+
+  color: #e5e6ed;
 }
 .btn {
   display: flex;
@@ -58,5 +65,24 @@
   order: 1;
   flex-grow: 0;
 }
-.shape {
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .heading {
+    font-family: "Satoshi-Black";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 92px;
+    letter-spacing: -8px;
+    color: #ffffff;
+  }
+  .subHeading {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .btn {
+    border-radius: 5px;
+  }
 }

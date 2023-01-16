@@ -4,6 +4,7 @@ import image3 from "../images/services/icon3.svg";
 import image4 from "../images/services/icon4.svg";
 import image5 from "../images/services/icon5.svg";
 import image6 from "../images/services/icon6.svg";
+import image7 from "../images/services/icon7.svg";
 import image8 from "../images/services/icon8.svg";
 
 const servicesData = [
@@ -38,9 +39,9 @@ const servicesData = [
         image : image6
     },
     {    id : 7,
-        title : "Project Management",
+        title : "Workflow builder",
         descripetion : "Lorem Ipsum is not simply random text. It has roots in a piece of classical.",
-        image : image6
+        image : image7
     },
     
     {    id : 8,

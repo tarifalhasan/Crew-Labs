@@ -2,10 +2,10 @@ import Link from "next/link";
 import styles from "../../../styles/Hero.module.css";
 const Hero = () => {
   return (
-    <div className="pt-0 pb-20 md:pt-10">
-      <div className="px-4 md:px-24 grid grid-cols-1">
-        <div className="pt-4 text-left md:text-center  w-full md:w-[60%] mx-auto">
-          <h2 className={`${styles.heading}leading-10	 text-6xl`}>
+    <div className="pt-0 pb-[3rem] md:pt-10">
+      <div className="px-12 md:px-24 grid grid-cols-1">
+        <div className="pt-4  text-left md:text-center  w-full md:w-[84%] mx-auto">
+          <h2 className={`${styles.heading}`}>
             Blockchain <br className="block md:hidden" />
             is <span className="text-[#004BDC] md:text-[36A6F6]">Fastest</span>
           </h2>
@@ -16,7 +16,7 @@ const Hero = () => {
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years.
           </p>
-          <div className="grid w-full mx-auto md:w-[60%] grid-cols-2 items-center text-base">
+          <div className="grid w-[75%] m-0 md:mx-auto md:w-[35%] grid-cols-2 items-center text-base py-14">
             <div>
               <button className={`${styles.btn}`}>Get started now</button>
             </div>

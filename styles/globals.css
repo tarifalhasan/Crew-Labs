@@ -71,3 +71,74 @@ body {
 .hero2 {
   background-image: url(../components//images/DecorativeLine.png);
 }
+/* ====Team Header Section Gredient ========== */
+
+.team_services_section {
+  background: radial-gradient(
+    46.45% 35.45% at 50% 46.16%,
+    rgba(1, 9, 80, 0.9) 3.12%,
+    rgba(14, 17, 32, 0) 100%
+  );
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .team_services_section {
+    background: radial-gradient(
+      113.45% 15.45% at 50% 64.16%,
+      rgba(1, 9, 80, 0.9) 3.12%,
+      rgba(14, 17, 32, 0) 100%
+    );
+  }
+}
+
+/* ------------------- */
+
+/**
+* ========================
+* keyframe animatins
+* ========================
+**/
+
+.float-right {
+  animation: float-right 4.5s ease-in-out infinite;
+}
+.float-right {
+  animation: float-left 4.5s ease-in-out infinite;
+  width: 220px;
+  height: 220px;
+  -webkit-filter: blur(120px);
+  filter: blur(120px);
+  position: absolute;
+  top: 280px;
+  left: 0;
+  border-radius: 50%;
+  background-color: blue;
+  z-index: 1;
+}
+.float-right {
+  animation: float-right 4.5s ease-in-out infinite;
+}
+
+@keyframes float-right {
+  from {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30vw, 15vw);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float-left {
+  from {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-44vw, -10vw);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}

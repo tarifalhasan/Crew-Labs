@@ -4,3 +4,15 @@
   margin: 0 auto;
   border-radius: 12px;
 }
+.cardIcon {
+  height: 91px;
+  width: 91px;
+  left: 0px;
+  margin: 0 auto;
+  top: 0px;
+  border-radius: 50%;
+  background: #34384c;
+  backdrop-filter: blur(7px);
+  display: flex;
+  align-items: center;
+}

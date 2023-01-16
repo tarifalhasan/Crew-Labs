@@ -6,9 +6,9 @@ import Cassey from "../images/team/Cassey.png";
 import Christian from "../images/team/Christian.png";
 import Dan from "../images/team/Dan.png";
 import Jack from "../images/team/jack.png";
-import linkedin from "../images/team/linkedien.svg";
+import Linkedin from "../images/team/linkedien.svg";
 import Steve from "../images/team/Steve.png";
-import twitter from "../images/team/twitter.svg";
+import Twitter from "../images/team/twitter.svg";
 import Veronica from "../images/team/Veronica.png";
 import Wanda from "../images/team/Wanda.png";
 
@@ -66,7 +66,7 @@ const Team = () => {
   return (
     <>
       <div className="relative">
-        <div className={`${styles.gredient} px-4 md:px-20 mx-auto`}>
+        <div className={` px-12 md:px-20 mx-auto`}>
           <div className="heading py-4">
             <p className="title">Who we are?</p>
             <h2 className="heading">Meet our teams.</h2>
@@ -84,10 +84,10 @@ const Team = () => {
                   <p className={`${styles.role}`}>{item.role}</p>
                   <div className="icon flex items-center justify-center gap-3">
                     <Link href="/twitter">
-                      <Image src={twitter} alt="twitter" />
+                      <Twitter />
                     </Link>
                     <Link href="/twitter">
-                      <Image src={linkedin} alt="linkedin" />
+                      <Linkedin />
                     </Link>
                   </div>
                 </div>

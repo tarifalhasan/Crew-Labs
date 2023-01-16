@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaAlignRight, FaAngleRight, FaTimes } from "react-icons/fa";
 import styles from "../../../styles/Navbar.module.css";
-import Logo from "../../images/logo.png";
+import Logo from "../../images/crew logo.svg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navLink = [
@@ -37,14 +36,12 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className=" px-4 md:px-24 ">
+    <div className="px-12 md:px-24 ">
       <nav className="bg-transparent sm:px-4 py-2.5  w-full  border-gray-200 ">
         <div className="container  flex  flex-wrap items-center justify-between mx-auto">
-          <Link href="/" className={`flex items-center${styles.logo}`}>
-            <Image src={Logo} alt="crew labs Logo" />
-            <span className="self-center ml-2 text-xl font-semibold whitespace-nowrap ">
-              Crew Labs
-            </span>
+          <Link href="/" className={`text-xl flex items-center ${styles.logo}`}>
+            <Logo className="text-2xl" />
+            <span>Crew Labs</span>
           </Link>
           <div className="flex md:order-2 relative">
             <Link

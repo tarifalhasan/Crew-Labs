@@ -5,9 +5,13 @@ import Navbar from "./Navbar/Navbar";
 const Header = () => {
   return (
     <main>
-      <div className={styles.gredient}>
+      <div className={``}>
         <Navbar />
         <Hero />
+        <div className="relative">
+          <div className={styles.floatRightt}></div>
+          <div className={styles.floatLeftt}></div>
+        </div>
       </div>
     </main>
   );

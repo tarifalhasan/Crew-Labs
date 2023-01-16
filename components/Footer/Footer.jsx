@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Footer.module.css";
-import Logo from "../images/logo.png";
-import linkedeinIcon from "../images/team/linkedien.svg";
-import twiterIcon from "../images/team/twitter.svg";
+import Logo from "../images/crew logo.svg";
+import LlinkedeinIcon from "../images/team/linkedien.svg";
+import TwiterIcon from "../images/team/twitter.svg";
 import Input from "../Input/Input";
 const Footer = () => {
   const links = [
@@ -13,22 +12,23 @@ const Footer = () => {
     { name: "Community", href: "/community", id: 4 },
   ];
   return (
-    <div className="px-4 md:px-24">
+    <div className="px-12 md:px-24 pt-0 md:pt-12">
       <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 ">
-        <div className="order-last md:order-first">
-          <Link href="/" className={`flex items-center${styles.logo}`}>
-            <Image src={Logo} alt="crew labs Logo" />
-            <span className="self-center ml-2 font-semibold whitespace-nowrap ">
-              Crew Labs
-            </span>
+        <div className="order-last  md:order-first">
+          <Link
+            href="/"
+            className={`flex items-center gap-[2px] text-lg items-center${styles.logo}`}
+          >
+            <Logo className="text-xl" />
+            <span>Crew Labs</span>
           </Link>
           <p className={styles.pragraph}>The Future Blockchain.</p>
           <div className="social_icon flex py-2 items-center gap-2 text-xl text-[#AEAFB4]">
             <Link href="https://linkdein.com">
-              <Image src={linkedeinIcon} alt="linkedein" />
+              <LlinkedeinIcon />
             </Link>
-            <Link href="https://linkdein.com">
-              <Image src={twiterIcon} alt="linkedein" />
+            <Link href="https://twitter.com">
+              <TwiterIcon />
             </Link>
           </div>
         </div>
