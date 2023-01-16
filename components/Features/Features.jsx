@@ -9,11 +9,11 @@ const Features = () => {
       className={`block md:flex items-center  justify-between py-10 md:py-28 px-4 md:px-24 `}
     >
       <div className={`basic-[47%] `}>
-        <div className="block md:flex items-center gap-5 m-[10px] md:m-[45px]">
+        <div className="block lg:flex items-center humsufer gap-5 m-[10px] md:m-[45px]">
           <div className="grid grid-cols-1 gap-7">
             <Card />
           </div>
-          <div className="pt-8 ml-0 md:ml-[4.75rem]">
+          <div className="pt-8 ml-0 lg:ml-[4.75rem]">
             <div
               className={`${styles.CardStyle} w-[100%] py-12 md:w-[100%] text-center`}
             >

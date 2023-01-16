@@ -27,3 +27,15 @@
     height: 372px;
   }
 }
+@media only screen and (width: 1024px) {
+  .CardStyle {
+    width: 327px;
+    height: 372px;
+  }
+}
+@media only screen and (max-width: 1316px) and (min-width: 1126px) {
+  .CardStyle {
+    width: 227px;
+    height: 372px;
+  }
+}
