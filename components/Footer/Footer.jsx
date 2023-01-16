@@ -3,7 +3,6 @@ import styles from "../../styles/Footer.module.css";
 import Logo from "../images/crew logo.svg";
 import LlinkedeinIcon from "../images/team/linkedien.svg";
 import TwiterIcon from "../images/team/twitter.svg";
-import Input from "../Input/Input";
 const Footer = () => {
   const links = [
     { name: "About", href: "/about", id: 1 },
@@ -59,7 +58,14 @@ const Footer = () => {
           <p className="text-[#AEAFB4] my-4">
             Subscribe to get update and notify our blockchain and products
           </p>
-          <Input btnName="Send" />
+          <div className={`  ${styles.inputGroup} `}>
+            <input
+              className="bg-transparent border-0 outline-0"
+              type="email"
+              placeholder="Enter you email address"
+            />
+            <button className={`${styles.btn}`}>Send</button>
+          </div>
         </div>
       </main>
       {/* copy rigth police */}
