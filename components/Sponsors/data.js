@@ -1,7 +1,7 @@
-import icon1 from "../images/sponsors/team/images1.svg"
-import icon2 from "../images/sponsors/team/images2.svg"
-import icon3 from "../images/sponsors/team/images3.svg"
-import icon4 from "../images/sponsors/team/images4.svg"
+import icon1 from "../images/sponsors/team logo/01.png"
+import icon2 from "../images/sponsors/team logo/02.png"
+import icon3 from "../images/sponsors/team logo/03.png"
+import icon4 from "../images/sponsors/team logo/04.png"
 
 const sponsers = [ 
     {

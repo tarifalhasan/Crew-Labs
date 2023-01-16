@@ -78,9 +78,10 @@
   }
   .subHeading {
     width: 100%;
-    font-size: 11px;
-    line-height: 30px;
-    text-align: justify;
+    font-size: 15px;
+    line-height: 21.6px;
+    text-align: left;
+    color: #aeafb4;
   }
   .btn {
     border-radius: 5px;

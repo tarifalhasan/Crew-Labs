@@ -1,5 +1,4 @@
 import styles from "../../styles/Input.module.css";
-import Button from "../Button/Button";
 const Input = ({ btnName, placeholder, height }) => {
   return (
     <div className={`  ${styles.inputGroup} ${height} justify-between`}>
@@ -8,7 +7,6 @@ const Input = ({ btnName, placeholder, height }) => {
         type="email"
         placeholder="Enter you email address"
       />
-      {btnName && <Button name={btnName} />}
     </div>
   );
 };

@@ -2,7 +2,9 @@ import styles from "../../styles/Services.module.css";
 import data from "./data";
 const Services = () => {
   return (
-    <div className={`px-[3.5rem] pb-24 md:px-[8rem] mx-auto ${styles.bg}`}>
+    <div
+      className={`px-[2rem] pt-6 md:pt-0 pb-24 md:px-[8rem] mx-auto ${styles.bg}`}
+    >
       <div className=" px-4 md:px-20 mx-auto">
         <div className="heading pb-10">
           <p className="title">What we do?</p>

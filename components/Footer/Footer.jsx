@@ -11,9 +11,9 @@ const Footer = () => {
     { name: "Community", href: "/community", id: 4 },
   ];
   return (
-    <div className="px-12 md:px-24 pt-0 md:pt-12">
+    <div className="px-6 md:px-24 pt-0 md:pt-12">
       <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 ">
-        <div className="order-last  md:order-first">
+        <div className="order-last pb-5  md:order-first">
           <Link
             href="/"
             className={`flex items-center gap-0 md:gap-[2px] text-lg items-center${styles.logo}`}
@@ -31,13 +31,11 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div>
+        <div className="pt-5 md:pt-0">
           <Link href="/" className={`flex items-center${styles.logo}`}>
-            <span className="self-center   font-semibold whitespace-nowrap ">
-              Quick menu.
-            </span>
+            <span>Quick menu.</span>
           </Link>
-          <div className="py-4">
+          <div className="pt-5">
             <div className="flex justify-between pb-4 text-[#AEAFB4]">
               <p>Collectibles</p>
               <p>Wallets</p>
@@ -58,33 +56,47 @@ const Footer = () => {
           <p className="text-[#AEAFB4] my-4">
             Subscribe to get update and notify our blockchain and products
           </p>
-          <div className={`  ${styles.inputGroup} `}>
-            <input
-              className="bg-transparent border-0 outline-0"
-              type="email"
-              placeholder="Enter you email address"
-            />
-            <button className={`${styles.btn}`}>Send</button>
-          </div>
+
+          <form>
+            <label
+              for="default-search"
+              className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+            >
+              Search
+            </label>
+            <div className="relative">
+              <input
+                type="email"
+                className="block w-full p-4 pl-10 text-sm text-white border border-gray-300 rounded-lg  subscribeBtn"
+                placeholder="Enter your Email"
+                required
+              />
+              <button
+                type="submit"
+                className="text-white absolute right-2.5 bottom-2.5 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 footerBtn"
+              >
+                Send
+              </button>
+            </div>
+          </form>
         </div>
       </main>
       {/* copy rigth police */}
-      <div
-        className={`grid grid-cols-1 md:grid-cols-2 items-center justify-between text-[#AEAFB4] text-base ${styles.copyright} mt-10`}
-      >
-        <div className="">
-          <p>2023 &copy; Crew Labs. All rights reserved.</p>
-        </div>
-        <div className="order-first md:order-last">
-          <ul className="flex gap-3">
-            {links.map((link) => (
-              <li key={link.id}>
-                <Link href={link.href}>{link.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+
+      <footer className=" bg-transparent rounded-lg  md:flex md:items-center md:justify-between md:p-6 ">
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          2023 © Crew Labs. All rights reserved.
+        </span>
+        <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+          {links.map((link) => (
+            <li key={link.id}>
+              <Link href={link.href} className="mr-4 hover:underline md:mr-6 ">
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </footer>
     </div>
   );
 };

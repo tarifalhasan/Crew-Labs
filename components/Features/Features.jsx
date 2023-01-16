@@ -6,7 +6,7 @@ import Card from "./Card";
 const Features = () => {
   return (
     <div
-      className={`block md:flex items-center  justify-between py-10 md:py-28 px-6 md:px-24 `}
+      className={`block md:flex items-center  justify-between py-10 md:py-28 px-4 md:px-24 `}
     >
       <div className={`basic-[47%] `}>
         <div className="block md:flex items-center gap-5 m-[10px] md:m-[45px]">
@@ -22,7 +22,7 @@ const Features = () => {
                   <Icon3 className="text-[3rem] mx-auto" />
                 </div>
                 <p className="py-4">Fast transactions</p>
-                <span className=" text-sm text-[#AEAFB4]">
+                <span className="w-[80%] mx-auto md:w-full block text-sm text-[#AEAFB4]">
                   Lorem Ipsum is not simply random text. It has roots in a piece
                   of classical.
                 </span>
@@ -32,7 +32,7 @@ const Features = () => {
         </div>
       </div>
       <div className="basis-[45%] px-3	">
-        <h2 className=" text-[33px]">
+        <h2 className="text-[23px] md:text-[33px] mt-10 md:mt-0">
           The fastest <br className="hidden md:block " /> blockchain{" "}
           <br className="hidden md:block " /> technology.
         </h2>

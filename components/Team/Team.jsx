@@ -65,22 +65,22 @@ const Team = () => {
   ];
   return (
     <>
-      <div className="relative">
-        <div className={` px-12 md:px-20 mx-auto`}>
-          <div className="heading py-4">
+      <div className="relative pt-2">
+        <div className={` px-6 md:px-20 mx-auto`}>
+          <div className="heading">
             <p className="title">Who we are?</p>
             <h2 className="heading">Meet our teams.</h2>
           </div>
-          <div className="grid gap-5 md:my-16 grid-cols-2 items-center md:grid-cols-4">
+          <div className="grid pt-8 gap-5 md:my-8 grid-cols-2 items-center md:grid-cols-4">
             {teamMembers.map((item) => (
-              <div key={item.id} className={`text-center py-10`}>
+              <div key={item.id} className={`text-center py-4 md:py-10`}>
                 <Image
-                  className="rounded-full block mx-auto"
+                  className="rounded-full w-[106px]  md:w-[130px] h-[106px] md:h-[130px] block mx-auto"
                   alt={item.name}
                   src={item.img}
                 />
                 <div className="mt-8">
-                  <h2 className={`${styles.name} text-xl`}>{item.name}</h2>
+                  <h2 className={`${styles.name}`}>{item.name}</h2>
                   <p className={`${styles.role}`}>{item.role}</p>
                   <div className="icon flex items-center justify-center gap-3">
                     <Link href="/twitter">

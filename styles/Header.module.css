@@ -1,12 +1,12 @@
-/* .gredient {
-  background: radial-gradient(
-    82.45% 87.45% at 28% -0.84%,
-    rgba(1, 9, 80, 0.9) 3.12%,
-    rgba(14, 17, 32, 0) 100%
-  );
-} */
-
 .gredient {
+  background: radial-gradient(
+    51.45% 59.45% at 17% 34.16%,
+    rgba(1, 9, 80, 0.9) -24.88%,
+    rgba(14, 17, 32, 0) 115%
+  );
+}
+
+/* .gredient {
   width: 100wh;
   height: 90vh;
   color: #fff;
@@ -19,7 +19,7 @@
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
-}
+} */
 
 .heading {
   background-image: url(../public/pattern\ .png);

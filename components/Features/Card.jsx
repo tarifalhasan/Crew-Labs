@@ -24,14 +24,16 @@ const Card = () => {
       {data.map((data) => (
         <div
           key={data.id}
-          className={`${styles.CardStyle} w-[100%] py-12 md:w-[100%] text-center`}
+          className={`${styles.CardStyle} w-full py-12 md:w-[100%] text-center`}
         >
           <div className="w-full md:w-[70%] mx-auto">
             <div className={styles.cardIcon}>
               {<data.icon className="text-[3rem] mx-auto" />}
             </div>
             <p className="py-4">{data.title}</p>
-            <span className=" text-sm text-[#AEAFB4]">{data.subTitle}</span>
+            <span className="w-[80%] mx-auto md:w-full block text-sm text-[#AEAFB4]">
+              {data.subTitle}
+            </span>
           </div>
         </div>
       ))}

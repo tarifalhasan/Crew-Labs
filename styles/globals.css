@@ -53,7 +53,6 @@ body {
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
-  margin: 10px 0px;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -63,9 +62,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
-  line-height: 56px;
   text-align: center;
-  margin: 10px 0px;
   color: #e6e6e6;
 }
 .hero2 {
@@ -93,10 +90,19 @@ body {
 .amimated-time {
   --animate-delay: 2s;
 }
-/* ------------------- */
-
-/**
-* ========================
-* keyframe animatins
-* ========================
-**/
+.subscribeBtn {
+  background: rgba(47, 50, 65, 0.5);
+  border: 1px solid #34384c;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+.footerBtn {
+  background: linear-gradient(
+    265.56deg,
+    #1b66f9 -0.27%,
+    #1e68f6 -0.26%,
+    #004bdb 98.59%
+  );
+  border-radius: 8px;
+}

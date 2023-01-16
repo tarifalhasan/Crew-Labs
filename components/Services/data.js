@@ -14,7 +14,7 @@ const servicesData = [
         image : image1
     },
     {    id : 2,
-        title : "Super Smart Search",
+        title : `Super Smart Search`,
         descripetion : "Lorem Ipsum is not simply random text. It has roots in a piece of classical.",
         image : image2
     },
