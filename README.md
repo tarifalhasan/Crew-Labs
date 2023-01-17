@@ -11,13 +11,13 @@ https://crew-labs-ymg9.vercel.app/
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/tarifalhasan/Crew-Labs
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Crew-Labs
 ```
 
 Install dependencies
