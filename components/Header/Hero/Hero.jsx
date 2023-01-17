@@ -16,16 +16,12 @@ const Hero = () => {
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years.
           </p>
-          <div className="flex w-full m-0 md:mx-auto md:w-[40%]  items-center text-base py-14 gap-[28px]">
-            <div>
-              <button className={`${styles.btn}`}>Get started now</button>
-            </div>
-            <p>
-              {" "}
-              <Link href="/developers" className="block">
-                Developer guides
-              </Link>
-            </p>
+          <div className="flex w-full m-0 md:mx-auto md:w-[48%]  items-center text-base py-14 gap-[13px] md:gap-[20px]">
+            <button className="rounded-full px-4 py-2">Get started now</button>
+
+            <Link href="/developers" className="block">
+              Developer guides
+            </Link>
           </div>
         </div>
       </div>

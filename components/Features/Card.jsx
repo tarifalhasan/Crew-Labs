@@ -17,6 +17,13 @@ const Card = () => {
         "Lorem Ipsum is not simply random text. It has roots in a piece of classical.",
       icon: icon2,
     },
+    {
+      id: 2,
+      title: "Connect Assets",
+      subTitle:
+        "Lorem Ipsum is not simply random text. It has roots in a piece of classical.",
+      icon: icon2,
+    },
   ];
 
   return (

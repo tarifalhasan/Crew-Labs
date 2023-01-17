@@ -1,5 +1,5 @@
 import styles from "../../styles/Contact.module.css";
-import Button from "../Button/Button";
+
 import Input from "../Input/Input";
 const Contact = () => {
   return (
@@ -10,13 +10,11 @@ const Contact = () => {
       </div>
       <div className="mb-4">
         <div className="">
-          <label className={styles.title} htmlFor="Email">
-            Your email
-          </label>
+          <label className={styles.title}>Your email</label>
           <Input />
         </div>
         <div>
-          <label className={`${styles.title}`} htmlFor="message">
+          <label className={`${styles.title}`}>
             Tell us what you need help with:
           </label>
           <textarea
@@ -28,7 +26,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="mt-4">
-          <Button name="Send now" />
+          <button className="py-4 px-6 rounded-lg">Send Mail</button>
         </div>
       </div>
     </div>
