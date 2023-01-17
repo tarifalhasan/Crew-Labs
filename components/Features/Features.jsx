@@ -5,8 +5,8 @@ import Shine3 from "../images/feature/Shine-3.svg";
 const Features = () => {
   return (
     <div className={`block  py-10 md:py-28 sm:px-4 md:px-24 mx-auto`}>
-      <div className="card_group block md:grid-cols-2 lg:grid-cols-4 md:grid">
-        <div className="card1">
+      <div className="card_group block md:block lg:grid lg:grid-cols-3 ">
+        <div className="card1 ">
           <div className="py-8 md:py-0">
             <div
               className={`${styles.CardStyle} w-[100%] py-12 md:w-[100%] text-center`}
@@ -24,9 +24,9 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="card2">
+        <div className="card2 md:py-7">
           <div
-            className={`${styles.CardStyle} w-[100%] py-12 md:w-[100%] text-center`}
+            className={`${styles.CardStyle} sm:w-[285px] lg:w-[285px] py-12 md:w-[496px] text-center`}
           >
             <div className="w-full md:w-[70%] mx-auto">
               <div className={styles.cardIcon}>
