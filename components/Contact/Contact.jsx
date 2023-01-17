@@ -26,7 +26,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="mt-4">
-          <button className="py-4 px-6 rounded-lg">Send Mail</button>
+          <button className="h-[46px] px-6 rounded-lg">Send Mail</button>
         </div>
       </div>
     </div>

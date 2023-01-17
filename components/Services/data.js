@@ -45,7 +45,7 @@ const servicesData = [
     },
     
     {    id : 8,
-        title : "Bring your team in channels.png",
+        title : "Bring your team in channels",
         descripetion : "Lorem Ipsum is not simply random text. It has roots in a piece of classical.",
         image : image8
     },

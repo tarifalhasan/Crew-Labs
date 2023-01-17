@@ -8,6 +8,7 @@
   height: 329px;
   display: grid;
   align-items: center;
+  left: 1rem;
 }
 .cardIcon {
   height: 91px;

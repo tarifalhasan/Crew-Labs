@@ -11,10 +11,10 @@ const Services = () => {
           <h3 className="heading">Fast, simple & effortless.</h3>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
+      <div className="grid grid-cols-1 gap-y-[20px] md:gap-y-[54px] md:grid-cols-4">
         {data.map((item) => (
           <div key={item.id}>
-            <item.image className="text-4xl my-1" />
+            <item.image className="text-6xl md:text-[48px] my-1" />
             <p className={styles.title}>{item.title}</p>
             <div className={styles.line}></div>
             <small className={styles.description}>{item.descripetion}</small>
