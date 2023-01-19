@@ -1,21 +1,16 @@
-import AOS from "aos";
-import { useEffect } from "react";
 import styles from "../../styles/Card.module.css";
 import Icon3 from "../images/feature/Shine-3.svg";
 import Card from "./Card";
 const Features = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-    });
-  });
   return (
     <section className="py-10 md:py-28 px-4 lg:px-28">
-      <div className={`block md:flex items-center  justify-evenly  `}>
+      <div
+        className={`block md:flex items-center  justify-evenly overflow-x-hidden	 `}
+      >
         <div
           className={`basic-[47%] `}
           data-aos="fade-right"
-          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
         >
           <div className="block lg:flex items-center humsufer gap-[12.5rem] m-[10px] md:m-[45px]">
             <div className="grid grid-cols-1 gap-7">

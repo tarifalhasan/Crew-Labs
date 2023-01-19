@@ -36,7 +36,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="px-6 md:px-24 ">
+    <div className="px-6 md:px-24 " onClick={() => openNavbar()}>
       <nav className="bg-transparent sm:px-4 py-2.5  w-full  border-gray-200 ">
         <div className="container   flex  flex-wrap items-center justify-between mx-auto">
           <Link href="/" className={`text-xl flex items-center ${styles.logo}`}>
@@ -70,11 +70,11 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`items-center  justify-between  w-full md:flex md:w-auto md:order-1 relative ${
+            className={`items-center  justify-between  w-full md:flex md:w-auto md:order-1 relative  ${
               isOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
+            <ul className="	 z-10 flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
               {navLink.map((link) => (
                 <li
                   key={link.id}

@@ -46,21 +46,6 @@ const Team = () => {
       },
     },
   };
-  const title = {
-    hidden: {
-      y: 60,
-      opacity: 0,
-    },
-    show: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        delay: 0.2,
-        duration: 0.6,
-        ease: easing,
-      },
-    },
-  };
 
   const items = {
     hidden: { opacity: 0, y: 20 },
@@ -77,17 +62,11 @@ const Team = () => {
   return (
     <>
       <motion.div className="relative pt-2">
-        <div className={` px-6 md:px-20 mx-auto`}>
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: 1.8 }}
-            className="heading"
-          >
+        <div className={` px-6 md:px-20 mx-auto overflow-x-hidden`}>
+          <div data-aos="fade-up" data-aos-duration="3000" className="heading">
             <p className="title">Who are we?</p>
             <h2 className="heading">Meet our founders!</h2>
-          </motion.div>
+          </div>
           <motion.div
             variants={container}
             initial="hidden"

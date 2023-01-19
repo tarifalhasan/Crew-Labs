@@ -5,7 +5,7 @@ const Services = () => {
   const container = {
     show: {
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -17,7 +17,7 @@ const Services = () => {
       y: 0,
       transition: {
         ease: "easeInOut",
-        duration: 0.2,
+        duration: 0.3,
       },
     },
   };
@@ -26,17 +26,15 @@ const Services = () => {
     <motion.div
       className={`px-[2rem] pt-10 md:pt-0 pb-24 md:px-[8rem] mx-auto ${styles.bg}`}
     >
-      <div className=" px-4 md:px-20 mx-auto">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5, delay: 1.8 }}
+      <div className=" px-4 md:px-20 mx-auto overflow-x-hidden">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
           className="heading pb-10"
         >
           <p className="title">thanks to web 3.0</p>
           <h3 className="heading">We're able to</h3>
-        </motion.div>
+        </div>
       </div>
       <motion.div
         className="grid grid-cols-1 gap-10 md:grid-cols-4"

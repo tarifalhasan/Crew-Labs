@@ -13,8 +13,12 @@ const Footer = () => {
 
   return (
     <div className="px-6 md:px-24 pt-5 md:pt-12">
-      <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 ">
-        <div className="order-last pb-5  md:order-first">
+      <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 overflow-x-hidden">
+        <div
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+          className="order-last pb-5  md:order-first"
+        >
           <Link
             href="/"
             className={`flex items-center gap-0 md:gap-[2px] text-lg items-center${styles.logo}`}
@@ -32,7 +36,11 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="pt-5 w-[70%] md:pt-0">
+        <div
+          data-aos-duration="1000"
+          data-aos="zoom-out-up"
+          className="pt-5 w-[70%] md:pt-0"
+        >
           <Link href="/" className={`flex items-center${styles.logo}`}>
             <span>Quick menu.</span>
           </Link>
@@ -50,7 +58,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="order-first md:order-last">
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+          className="order-first md:order-last"
+        >
           <Link href="/" className={`flex items-center${styles.logo}`}>
             <span className="self-center">Subcribe our latest news</span>
           </Link>
