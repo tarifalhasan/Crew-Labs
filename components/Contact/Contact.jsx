@@ -1,4 +1,4 @@
-import "animate.css";
+
 import styles from "../../styles/Contact.module.css";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
