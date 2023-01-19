@@ -3,12 +3,12 @@ import Hero from "./Hero/Hero";
 import Navbar from "./Navbar/Navbar";
 const Header = () => {
   return (
-    <main>
-      <div className={`${styles.gredient}`}>
+    <header className={`${styles.gredient}`}>
+      <div className={`container`}>
         <Navbar />
         <Hero />
       </div>
-    </main>
+    </header>
   );
 };
 

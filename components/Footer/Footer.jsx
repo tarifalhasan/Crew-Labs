@@ -11,7 +11,7 @@ const Footer = () => {
     { name: "Community", href: "/community", id: 4 },
   ];
   return (
-    <div className="px-6 md:px-24 pt-5 md:pt-12">
+    <div className="px-6 md:px-24 pt-5 md:pt-12 container">
       <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 ">
         <div className="order-last pb-5  md:order-first">
           <Link

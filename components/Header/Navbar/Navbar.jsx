@@ -7,29 +7,24 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navLink = [
     {
-      name: "Cloud",
+      name: "Web 3.0",
       id: 1,
-      href: "/cloud",
+      href: "/web3.0",
     },
     {
-      name: "Enterprise",
+      name: "Features",
       id: 2,
-      href: "/enterprise",
+      href: "/features",
     },
     {
-      name: "Pricing",
+      name: "Team",
       id: 3,
-      href: "/pricing",
+      href: "/team",
     },
     {
-      name: "API & Console",
+      name: "Contact Us ",
       id: 4,
-      href: "/api/console",
-    },
-    {
-      name: "Support",
-      id: 5,
-      href: "/support",
+      href: "/contact",
     },
   ];
   const openNavbar = () => {
@@ -48,7 +43,8 @@ const Navbar = () => {
               href="/roadmap"
               className={`md:flex items-center hidden ${styles.navLink}`}
             >
-              Roadmap <FaAngleRight />
+              Documentation
+              <FaAngleRight />
             </Link>
             <button
               type="button"

@@ -5,7 +5,7 @@ import Header from "@/components/Header/Header";
 import Services from "@/components/Services/Services";
 import Sponsors from "@/components/Sponsors/Sponsors";
 import Team from "@/components/Team/Team";
-import "animate.css";
+
 import Head from "next/head";
 import styles from "../styles/Header.module.css";
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.heading}>
+      <div className={styles.heading}>
         <Header />
         <Sponsors />
         <Features />
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <Contact />
         <Footer />
-      </main>
+      </div>
     </>
   );
 }
