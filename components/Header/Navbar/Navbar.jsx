@@ -9,22 +9,27 @@ const Navbar = () => {
     {
       name: "Web 3.0",
       id: 1,
-      href: "/web3.0",
+      href: "/cloud",
     },
     {
       name: "Features",
       id: 2,
-      href: "/features",
+      href: "/enterprise",
     },
     {
       name: "Team",
       id: 3,
-      href: "/team",
+      href: "/pricing",
     },
     {
-      name: "Contact Us ",
+      name: "Contact Us",
       id: 4,
-      href: "/contact",
+      href: "/api/console",
+    },
+    {
+      name: "Blog",
+      id: 5,
+      href: "/support",
     },
   ];
   const openNavbar = () => {
@@ -43,8 +48,7 @@ const Navbar = () => {
               href="/roadmap"
               className={`md:flex items-center hidden ${styles.navLink}`}
             >
-              Documentation
-              <FaAngleRight />
+              Documentation <FaAngleRight />
             </Link>
             <button
               type="button"
@@ -70,7 +74,7 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex flex-col p-4 mt-4 z-50 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
+            <ul className="flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
               {navLink.map((link) => (
                 <li
                   key={link.id}

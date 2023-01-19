@@ -45,10 +45,13 @@ body {
   font-family: "Satoshi-Medium";
   color: #e6e6e6;
   overflow-x: hidden;
+  background-image: url(../public/pattern\ .png);
+  height: 231vh;
+  background-repeat: no-repeat;
+  z-index: 100;
+  width: 100%;
 }
-.container {
-  margin: 0 auto;
-}
+
 .feature-title {
   padding: 0px 35px;
 }
@@ -62,6 +65,32 @@ button {
   font-size: 14px;
   font-family: "Satoshi-Medium";
 }
+/***** Slide Right *****/
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
 .title {
   color: rgba(174, 175, 180, 0.5);
   font-family: "Satoshi-Bold";
@@ -81,6 +110,8 @@ button {
   text-align: center;
   color: #e6e6e6;
 }
+
+/* ========Headeer ======= */
 /* ====Team Header Section Gredient ========== */
 
 .team_services_section {

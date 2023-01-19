@@ -1,17 +1,23 @@
 @font-face {
   font-family: "Satoshi-Black";
-  src: url("../public/Fonts/WEB/fonts/Satoshi-Black.woff2") format("woff2"),
-    url("../public/Fonts/WEB/fonts/Satoshi-Black.woff") format("woff"),
-    url("../public/Fonts/WEB/fonts/Satoshi-Black.ttf") format("truetype");
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff2")
+      format("woff2"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.woff")
+      format("woff"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Black.ttf")
+      format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Satoshi-Light";
-  src: url("../public/Fonts/WEB/fonts/Satoshi-Regular.woff2") format("woff2"),
-    url("../public/Fonts/WEB/fonts/Satoshi-Regular.woff") format("woff"),
-    url("../public/Fonts/WEB/fonts/Satoshi-Regular.ttf") format("truetype");
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2")
+      format("woff2"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff")
+      format("woff"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.ttf")
+      format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -30,6 +36,7 @@
   height: 60px;
   left: 342px;
   top: 308px;
+
   font-family: "Satoshi-Light";
   font-style: normal;
   font-weight: 400;
@@ -40,7 +47,12 @@
   color: #e5e6ed;
 }
 .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 12px 24px;
+  gap: 10px;
   height: 47px;
   background: linear-gradient(
     265.56deg,
@@ -49,6 +61,9 @@
     #004bdb 98.59%
   );
   border-radius: 29px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -63,10 +78,9 @@
   }
   .subHeading {
     width: 100%;
-    font-size: 15px;
-    line-height: 21.6px;
-    text-align: left;
-    color: #aeafb4;
+    font-size: 11px;
+    line-height: 30px;
+    text-align: justify;
   }
   .btn {
     border-radius: 5px;

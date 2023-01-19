@@ -24,7 +24,7 @@ const Sponsors = () => {
   };
 
   return (
-    <motion.div className="px-6 md:px-26 pt-2 md:pt-0 container">
+    <motion.div className="px-6 md:px-26 pt-2 md:pt-0">
       <motion.p
         className="title"
         initial={{ y: 20, opacity: 0 }}

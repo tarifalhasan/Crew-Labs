@@ -10,8 +10,9 @@ const Footer = () => {
     { name: "Developers", href: "/developers", id: 3 },
     { name: "Community", href: "/community", id: 4 },
   ];
+
   return (
-    <div className="px-6 md:px-24 pt-5 md:pt-12 container">
+    <div className="px-6 md:px-24 pt-5 md:pt-12">
       <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 ">
         <div className="order-last pb-5  md:order-first">
           <Link
@@ -21,7 +22,7 @@ const Footer = () => {
             <Logo className="text-4xl" />
             <span>Crew Labs</span>
           </Link>
-          <p className={styles.pragraph}>The Future Blockchain.</p>
+          <p className={styles.pragraph}>The DeFi Crew.</p>
           <div className="social_icon flex py-2 items-center gap-2 text-xl text-[#AEAFB4]">
             <Link href="https://linkdein.com">
               <LlinkedeinIcon />
@@ -36,15 +37,15 @@ const Footer = () => {
             <span>Quick menu.</span>
           </Link>
           <div className="pt-5">
-            <div className="flex justify-between pb-4 text-[#AEAFB4]">
+            <div className="flex justify-between w-[90%] pb-4 text-[#AEAFB4]">
               <p>Collectibles</p>
               <p className="cardWallet">Wallets</p>
             </div>
-            <div className="flex justify-between pb-4 text-[#AEAFB4]">
+            <div className="flex justify-between w-[90%] pb-4 text-[#AEAFB4]">
               <p>DeFi</p>
               <p>Company</p>
             </div>
-            <div className="flex justify-between pb-4 text-[#AEAFB4]">
+            <div className="flex justify-between w-[90%] pb-4 text-[#AEAFB4]">
               <p>Company</p>
             </div>
           </div>
@@ -58,7 +59,10 @@ const Footer = () => {
           </p>
 
           <form>
-            <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
+            <label
+              for="default-search"
+              className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+            >
               Search
             </label>
             <div className="relative">

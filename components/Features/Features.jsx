@@ -10,14 +10,14 @@ const Features = () => {
     });
   });
   return (
-    <section className="py-10 md:py-28 px-4 lg:px-28 container">
+    <section className="py-10 md:py-28 px-4 lg:px-28">
       <div className={`block md:flex items-center  justify-evenly  `}>
         <div
           className={`basic-[47%] `}
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
         >
-          <div className="block lg:flex items-center humsufer gap-[10.5rem] m-[10px] md:m-[45px]">
+          <div className="block lg:flex items-center humsufer gap-[12.5rem] m-[10px] md:m-[45px]">
             <div className="grid grid-cols-1 gap-7">
               <Card />
             </div>

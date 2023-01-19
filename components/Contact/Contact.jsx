@@ -1,25 +1,18 @@
-import AOS from "aos";
-import { useEffect } from "react";
+import "animate.css";
 import styles from "../../styles/Contact.module.css";
+import Button from "../Button/Button";
 import Input from "../Input/Input";
+
 const Contact = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-    });
-  });
   return (
-    <div className="grid grid-cols-1 py-8 container md:grid-cols-2 px-6 md:px-24">
-      <div
-        data-aos="fade-right"
-        className="my-10 md:my-0 sm:block md:flex justify-center items-center"
-      >
+    <div className="grid grid-cols-1 py-8  md:grid-cols-2 px-6 md:px-24">
+      <div className="slide-right animate__animated animate__bounce my-10 md:my-0 block md:flex items-center justify-center">
         <div>
           <p className={`${styles.title}`}>Questions, bug reports, feedback.</p>
           <h2 className={`${styles.heading}`}>Contact us</h2>
         </div>
       </div>
-      <div className="mb-4" data-aos="fade-left">
+      <div className="slide-left">
         <div className="">
           <label className={styles.title}>Your email</label>
           <Input />
@@ -37,7 +30,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="mt-4">
-          <button className="h-[46px] px-6 rounded-lg">Send Mail</button>
+          <Button name="Send now" />
         </div>
       </div>
     </div>

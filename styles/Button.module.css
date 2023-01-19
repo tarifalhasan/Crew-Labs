@@ -1,0 +1,19 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  height: 47px;
+  background: linear-gradient(
+    265.56deg,
+    #1b66f9 -0.27%,
+    #1e68f6 -0.26%,
+    #004bdb 98.59%
+  );
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

@@ -1,31 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
-
-.name {
-  font-family: "Inter", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost:wght@400;500&display=swap");
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2")
+      format("woff2"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff")
+      format("woff"),
+    url("../public/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+}
+.name {
+  font-family: "Satoshi-Bold";
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
 }
 .role {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
+  font-weight: 500;
   color: #ffffff;
-  padding: 5px 0;
   opacity: 0.75;
-}
-@media screen and (max-width: 768px) {
-  .name {
-    font-size: 14px;
-  }
-  .role {
-    font-size: 10px;
-    padding: 2px 0;
-  }
 }
 
 .gredient {

@@ -2,67 +2,41 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Team.module.css";
-import Anne from "../images/team/Anne.png";
-import Cassey from "../images/team/Cassey.png";
-import Christian from "../images/team/Christian.png";
-import Dan from "../images/team/Dan.png";
 import Jack from "../images/team/jack.png";
 import Linkedin from "../images/team/linkedien.svg";
 import Steve from "../images/team/Steve.png";
 import Twitter from "../images/team/twitter.svg";
 import Veronica from "../images/team/Veronica.png";
 import Wanda from "../images/team/Wanda.png";
+
 const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Wanda Maximof",
-      role: "Senior Blockchain",
+      name: "Ryan Robertson",
+      role: "Software Developer",
       img: Wanda,
     },
     {
       id: 2,
-      name: "Steve Burnley",
-      role: "Backend Leads",
+      name: "Alex Hamilton",
+      role: "UI/UX Specialist & Creative Director",
       img: Steve,
     },
     {
       id: 3,
-      name: "Jack Williams",
-      role: "UI/UX Engineer",
+      name: "Thomas Gaffney",
+      role: "Chief Compliance Officer",
       img: Jack,
     },
     {
       id: 4,
-      name: "Veronica Rei",
-      role: "Cryptography Engineer",
+      name: "Soumik Dey",
+      role: "Resource Manager & Coordinator",
       img: Veronica,
     },
-    {
-      id: 5,
-      name: "Cassey Fanesh",
-      role: "Frontend Developers",
-      img: Cassey,
-    },
-    {
-      id: 6,
-      name: "Dan Hamburg",
-      role: "Backend Developers",
-      img: Dan,
-    },
-    {
-      id: 7,
-      name: "Anne Kath",
-      role: "Database Engineer",
-      img: Anne,
-    },
-    {
-      id: 8,
-      name: "Christian Van Hoc",
-      role: "Community Manager",
-      img: Christian,
-    },
   ];
+  // motion
   let easing = [0.6, -0.05, 0.01, 0.99];
 
   const container = {
@@ -72,19 +46,6 @@ const Team = () => {
       },
     },
   };
-
-  const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        ease: "easeInOut",
-        duration: 0.2,
-      },
-    },
-  };
-
   const title = {
     hidden: {
       y: 60,
@@ -101,9 +62,21 @@ const Team = () => {
     },
   };
 
+  const items = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: "easeInOut",
+        duration: 0.2,
+      },
+    },
+  };
+
   return (
     <>
-      <motion.div className="relative pt-2 px-3 container">
+      <motion.div className="relative pt-2">
         <div className={` px-6 md:px-20 mx-auto`}>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -112,39 +85,31 @@ const Team = () => {
             transition={{ duration: 0.5, delay: 1.8 }}
             className="heading"
           >
-            <p className="title">Who we are?</p>
-            <motion.h2
-              initial={{ y: 200, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 1 }}
-              className="heading"
-            >
-              Meet our teams.
-            </motion.h2>
+            <p className="title">Who are we?</p>
+            <h2 className="heading">Meet our founders!</h2>
           </motion.div>
           <motion.div
-            className="grid pt-8 gap-5 md:my-8 grid-cols-2 items-center md:grid-cols-4"
             variants={container}
             initial="hidden"
             exit="exit"
             whileInView="show"
             viewport={{ once: false }}
+            className="grid pt-8 gap-5 md:my-8 grid-cols-2 items-center md:grid-cols-4"
           >
-            {teamMembers?.map((data) => (
+            {teamMembers.map((item) => (
               <motion.div
-                variants={item}
-                key={data.id}
+                variants={items}
+                key={item.id}
                 className={`text-center py-4 md:py-10`}
               >
                 <Image
                   className="rounded-full w-[106px]  md:w-[130px] h-[106px] md:h-[130px] block mx-auto"
-                  alt={data.name}
-                  src={data.img}
+                  alt={item.name}
+                  src={item.img}
                 />
                 <div className="mt-8">
-                  <h2 className={`${styles.name}`}>{data.name}</h2>
-                  <p className={`${styles.role}`}>{data.role}</p>
+                  <h2 className={`${styles.name}`}>{item.name}</h2>
+                  <p className={`${styles.role}`}>{item.role}</p>
                   <div className="icon flex items-center justify-center gap-3">
                     <Link href="/twitter">
                       <Twitter className="text-2xl" />

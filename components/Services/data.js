@@ -15,11 +15,11 @@ const servicesData = [
     },
     {    id : 2,
         title : `Super Smart Search`,
-        descripetion : "More diverse, accurate, and personalized results, by embedding advanced metadata capabilities to files. ",
+        descripetion : "More diverse, accurate, and personalized results, by embedding advanced metadata capabilities to files.",
         image : image2
     },
     {    id : 3,
-        title : "Control everything",
+        title : "Control",
         descripetion : "Web 3.0 lets individuals have more autonomy over their data and online activities, putting the power back in the users hands.",
         image : image3
     },
@@ -30,7 +30,7 @@ const servicesData = [
     },
     {    id : 5,
         title : "Be Autonomous",
-        descripetion : "The integration of smart contracts, DAOs, tokenization, crowdsourcing and community governance and self-service platforms will provide a more autonomous and self-sufficient system",
+        descripetion : "The integration of smart contracts, DAOs, tokenization, crowdsourcing and community governance and self-service platforms  will provide a more autonomous and self-sufficient system",
         image : image5
     },
     {    id : 6,
