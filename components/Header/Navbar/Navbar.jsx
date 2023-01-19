@@ -70,7 +70,7 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
+            <ul className="flex flex-col p-4 mt-4 z-50 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
               {navLink.map((link) => (
                 <li
                   key={link.id}
