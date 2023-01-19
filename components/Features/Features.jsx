@@ -10,7 +10,7 @@ const Features = () => {
     });
   });
   return (
-    <section className="py-10 md:py-28 sm:px-4 lg:px-28 container">
+    <section className="py-10 md:py-28 px-4 lg:px-28 container">
       <div className={`block md:flex items-center  justify-evenly  `}>
         <div
           className={`basic-[47%] `}
@@ -41,7 +41,7 @@ const Features = () => {
           </div>
         </div>
         <div
-          className="basis-[45%] px-3 mt-14"
+          className="basis-[45%] feature-title px-3 mt-14"
           data-aos="fade-left"
           data-aos-easing="ease-in-sine"
         >

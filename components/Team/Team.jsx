@@ -103,7 +103,7 @@ const Team = () => {
 
   return (
     <>
-      <motion.div className="relative pt-2 container">
+      <motion.div className="relative pt-2 px-3 container">
         <div className={` px-6 md:px-20 mx-auto`}>
           <motion.div
             initial={{ y: 20, opacity: 0 }}

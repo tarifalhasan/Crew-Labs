@@ -49,6 +49,9 @@ body {
 .container {
   margin: 0 auto;
 }
+.feature-title {
+  padding: 0px 35px;
+}
 button {
   background: linear-gradient(
     265.56deg,
