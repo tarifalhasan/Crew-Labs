@@ -1,9 +1,3 @@
-.CardStyle {
-  background: rgba(47, 50, 65, 0.5);
-  backdrop-filter: blur(6px);
-  margin: 0 auto;
-  border-radius: 12px;
-}
 .cardIcon {
   height: 91px;
   width: 91px;
@@ -17,13 +11,7 @@
   align-items: center;
 }
 .CardStyle {
-  background: rgba(47, 50, 65, 0.5);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
   margin: 0 auto;
-  border-radius: 12px;
-  width: 285px;
-  height: 329px;
   display: grid;
   align-items: center;
 }
@@ -39,21 +27,39 @@
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 768px) {
-  .CardStyle {
-    width: 327px;
-    height: 372px;
-  }
+.Grid {
+  padding-top: 2rem;
+  grid-template-columns: 285px 285px auto;
+  grid-template-areas:
+    "a  .  . "
+    "a  d  c "
+    "b  d  c "
+    "b  .  . ";
+  gap: 1rem;
 }
-@media only screen and (width: 1024px) {
-  .CardStyle {
-    width: 327px;
-    height: 372px;
-  }
+
+.card {
+  border-radius: 12px;
+  background: #181921;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
-@media only screen and (max-width: 1316px) and (min-width: 1126px) {
-  .CardStyle {
-    width: 227px;
-    height: 372px;
-  }
+.Grid > .card:nth-child(1) {
+  grid-area: a;
+  border-radius: 12px;
+  background: #181921;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.Grid > .card:nth-child(2) {
+  grid-area: d;
+}
+
+.Grid > .card:nth-child(3) {
+  grid-area: b;
+}
+
+.Grid > .card:nth-child(4) {
+  grid-area: c;
+  background: none;
 }

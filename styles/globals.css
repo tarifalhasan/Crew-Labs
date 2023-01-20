@@ -179,27 +179,15 @@ p.cardWallet {
   }
 }
 /* for test */
-.card_group {
-  grid-template-columns: repeat(3, 285px);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0;
-  grid-row-gap: 63px;
+.justify-left {
+  justify-content: left;
+}
+/* --------Features Card---------- */
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
 }
 
-.card1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.card2 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.card3 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.card4 {
-  grid-area: auto;
-}
-@media only screen and (max-width: 768px) and (min-width: 71024px) {
-  .card_group {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+/* responsive layout */

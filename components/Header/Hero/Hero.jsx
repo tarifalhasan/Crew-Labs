@@ -20,12 +20,11 @@ const Hero = () => {
             solutions. We decentralize your business by unleashing the power of
             Web 3.0 and maximizing your performance.
           </p>
-          <div className="flex w-full m-0 md:mx-auto md:w-[40%]  items-center text-base py-14 gap-[28px]">
+          <div className="flex w-full m-0 md:mx-auto  md:justify-center  items-center text-base py-14 gap-[12px] md:gap-[26px]">
             <div>
               <button className={`${styles.btn}`}>Get started now</button>
             </div>
             <p>
-              {" "}
               <Link href="/developers" className="block">
                 Developer guides
               </Link>

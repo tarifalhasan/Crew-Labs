@@ -16,20 +16,20 @@ const Services = () => {
       opacity: 1,
       y: 0,
       transition: {
-        ease: "easeInOut",
         duration: 0.3,
+        type: "tween",
       },
     },
   };
 
   return (
     <motion.div
-      className={`px-[2rem] pt-10 md:pt-0 pb-24 md:px-[8rem] mx-auto ${styles.bg}`}
+      className={`px-[2rem] overflow-x-hidden  md:pt-0 pb-24 md:px-[8rem] mx-auto ${styles.bg}`}
     >
-      <div className=" px-4 md:px-20 mx-auto overflow-x-hidden">
+      <div className=" px-4 md:px-20 mx-auto ">
         <div
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
           className="heading pb-10"
         >
           <p className="title">thanks to web 3.0</p>
@@ -42,10 +42,15 @@ const Services = () => {
         initial="hidden"
         exit="exit"
         whileInView="show"
-        viewport={{ once: false }}
+        viewport={{ once: true }}
       >
         {data.map((item) => (
-          <motion.div variants={items} key={item.id}>
+          <motion.div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            variants={items}
+            key={item.id}
+          >
             <item.image className="text-4xl my-1" />
             <p className={styles.title}>{item.title}</p>
             <div className={styles.line}></div>

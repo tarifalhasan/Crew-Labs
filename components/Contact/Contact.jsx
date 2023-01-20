@@ -1,4 +1,3 @@
-
 import styles from "../../styles/Contact.module.css";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
@@ -8,9 +7,9 @@ const Contact = () => {
       <div
         data-aos="fade-right"
         data-aos-duration="1000"
-        className=" my-10 md:my-0 block md:flex items-center justify-center"
+        className=" my-10 md:my-0 block md:flex  relative  justify-center"
       >
-        <div>
+        <div className="md:absolute mt-[86px]">
           <p className={`${styles.title}`}>Questions, bug reports, feedback.</p>
           <h2 className={`${styles.heading}`}>Contact us</h2>
         </div>

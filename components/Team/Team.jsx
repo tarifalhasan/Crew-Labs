@@ -53,8 +53,8 @@ const Team = () => {
       opacity: 1,
       y: 0,
       transition: {
-        ease: "easeInOut",
         duration: 0.2,
+        type: "spring",
       },
     },
   };
@@ -72,11 +72,13 @@ const Team = () => {
             initial="hidden"
             exit="exit"
             whileInView="show"
-            viewport={{ once: false }}
-            className="grid pt-8 gap-5 md:my-8 grid-cols-2 items-center md:grid-cols-4"
+            viewport={{ once: true }}
+            className="grid pt-8 gap-5  md:my-8 grid-cols-2 items-center md:grid-cols-4"
           >
             {teamMembers.map((item) => (
               <motion.div
+                data-aos="fade-right"
+                data-aos-duration="2000"
                 variants={items}
                 key={item.id}
                 className={`text-center py-4 md:py-10`}
@@ -88,13 +90,13 @@ const Team = () => {
                 />
                 <div className="mt-8">
                   <h2 className={`${styles.name}`}>{item.name}</h2>
-                  <p className={`${styles.role}`}>{item.role}</p>
-                  <div className="icon flex items-center justify-center gap-3">
+                  <p className={`${styles.role} `}>{item.role}</p>
+                  <div className="icon flex items-center justify-center gap-4">
                     <Link href="/twitter">
-                      <Twitter className="text-2xl" />
+                      <Twitter className="text-[1.7rem]" />
                     </Link>
                     <Link href="/twitter">
-                      <Linkedin className="text-2xl" />
+                      <Linkedin className="text-[1.7rem]" />
                     </Link>
                   </div>
                 </div>
