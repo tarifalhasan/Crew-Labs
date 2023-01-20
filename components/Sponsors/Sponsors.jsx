@@ -25,7 +25,7 @@ const Sponsors = () => {
   };
 
   return (
-    <motion.div className="px-6 md:px-26  pt-2 md:pt-0">
+    <motion.div className="px-6 lg:px-16  pt-2 md:pt-0">
       <motion.p
         className="title"
         initial={{ y: 20, opacity: 0 }}
@@ -41,7 +41,7 @@ const Sponsors = () => {
         exit="exit"
         whileInView="show"
         viewport={{ once: true }}
-        className="grid pb-4 overflow-hidden omy-5 md:grid-cols-4 grid-cols-2 w-full md:w-[60%] mx-auto"
+        className="grid pb-4 overflow-hidden omy-5 md:grid-cols-4 grid-cols-2 w-full lg:w-[70%] mx-auto"
       >
         {data?.map((img) => (
           <motion.span

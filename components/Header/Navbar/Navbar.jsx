@@ -9,36 +9,31 @@ const Navbar = () => {
     {
       name: "Web 3.0",
       id: 1,
-      href: "/cloud",
+      href: "/servics",
     },
     {
       name: "Features",
       id: 2,
-      href: "/enterprise",
+      href: "/features",
     },
     {
       name: "Team",
       id: 3,
-      href: "/pricing",
+      href: "/team",
     },
     {
       name: "Contact Us",
       id: 4,
-      href: "/api/console",
-    },
-    {
-      name: "Blog",
-      id: 5,
-      href: "/support",
+      href: "/contact",
     },
   ];
   const openNavbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="px-6 md:px-24 " onClick={() => openNavbar()}>
+    <div className="px-6 lg:px-16 ">
       <nav className="bg-transparent sm:px-4 py-2.5  w-full  border-gray-200 ">
-        <div className="container   flex  flex-wrap items-center justify-between mx-auto">
+        <div className=" flex  flex-wrap items-center justify-between mx-auto">
           <Link href="/" className={`text-xl flex items-center ${styles.logo}`}>
             <Logo className="text-2xl" />
             <span>Crew Labs</span>

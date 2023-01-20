@@ -2,15 +2,15 @@ import Link from "next/link";
 import styles from "../../../styles/Hero.module.css";
 const Hero = () => {
   return (
-    <div className="pt-0 pb-[3rem] md:pt-10 overflow-x-hidden">
+    <div className="pt-0 lg:px-16 pb-[3rem] md:pt-10 overflow-x-hidden">
       <div
-        className="px-6 md:px-24 grid grid-cols-1"
+        className="px-6  grid grid-cols-1"
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
         <div className="pt-[4rem] md:pt-5 text-left md:text-center  w-full lg:w-[84%] mx-auto">
           <h2 className={`${styles.heading}`}>
-            The DeFi <br className="block md:hidden" />
+            The DeFi <br className="block lg:hidden" />
             <span className="text-[#004BDC] md:text-[36A6F6]">Crew</span>
           </h2>
           <p

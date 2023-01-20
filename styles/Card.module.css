@@ -28,14 +28,14 @@
   align-items: center;
 }
 .Grid {
-  padding-top: 2rem;
-  grid-template-columns: 285px 285px auto;
+  grid-template-columns: 17.5rem 17.5rem auto;
+  /* grid-auto-columns: minmax(285px, auto); */
   grid-template-areas:
     "a  .  . "
     "a  d  c "
     "b  d  c "
     "b  .  . ";
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .card {

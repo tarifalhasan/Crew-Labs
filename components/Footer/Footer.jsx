@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="px-6 md:px-24 pt-5 md:pt-12 overflow-hidden">
+    <div className="px-6 lg:px-16 pt-5 md:pt-12 overflow-hidden">
       <main className="grid grid-cols-1 gap-5 md:gap-10 md:grid-cols-3 ">
         <div
           data-aos="zoom-in-right"

@@ -5,13 +5,13 @@ import Icon3 from "../images/feature/Shine-3.svg";
 
 const Features = () => {
   return (
-    <section className="py-10 md:py-28 px-4 lg:px-28">
-      <section className={`${styles.Grid} block md:grid overflow-x-hidden`}>
+    <section className="py-10 lg:py-28 lg:px-16 px-4 ">
+      <section className={`${styles.Grid} block lg:grid overflow-hidden`}>
         <div
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
-          className={`${styles.card} h-[353px]`}
+          className={`${styles.card} md:my-[37px] lg:my-0 h-[353px]`}
         >
           <div
             className={` h-[329px] md:h-auto w-full py-12 md:w-[100%] text-center`}
@@ -32,7 +32,7 @@ const Features = () => {
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
-          className={`${styles.card} h-[353px] mt-8 md:mt-0`}
+          className={`${styles.card} md:my-[37px] lg:my-0 h-[353px] mt-8 md:mt-0`}
         >
           <div
             className={`${styles.CardStyle} md:my-0 my-14 h-[329px] md:h-auto w-full pt-12 md:w-[100%] text-center`}
@@ -53,7 +53,7 @@ const Features = () => {
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
-          className={`${styles.card} card mt-8 md:mt-0 h-[353px]`}
+          className={`${styles.card} md:my-[37px] lg:my-0 card mt-8 md:mt-0 h-[353px]`}
         >
           <div
             className={`${styles.CardStyle} w-full py-12 md:w-[100%] text-center`}

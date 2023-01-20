@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import Input from "../Input/Input";
 const Contact = () => {
   return (
-    <div className="grid grid-cols-1 py-8  md:grid-cols-2 px-6 md:px-24 overflow-x-hidden	">
+    <div className="grid grid-cols-1 py-8 lg:px-16 md:grid-cols-2 px-6 overflow-x-hidden	">
       <div
         data-aos="fade-right"
         data-aos-duration="1000"

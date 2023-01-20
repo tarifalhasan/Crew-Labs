@@ -24,9 +24,9 @@ const Services = () => {
 
   return (
     <motion.div
-      className={`px-[2rem] overflow-x-hidden  md:pt-0 pb-24 md:px-[8rem] mx-auto ${styles.bg}`}
+      className={`px-[2rem] lg:px-16 overflow-x-hidden  md:pt-0 pb-24  mx-auto ${styles.bg}`}
     >
-      <div className=" px-4 md:px-20 mx-auto ">
+      <div className=" px-4  mx-auto ">
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
