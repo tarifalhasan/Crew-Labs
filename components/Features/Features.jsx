@@ -5,7 +5,7 @@ import Icon3 from "../images/feature/Shine-3.svg";
 
 const Features = () => {
   return (
-    <section className="py-10 lg:py-28 lg:px-16 px-4 ">
+    <section id="features" className="py-10 lg:py-28 lg:px-16 px-4 ">
       <section className={`${styles.Grid} block lg:grid overflow-hidden`}>
         <div
           data-aos="fade-right"

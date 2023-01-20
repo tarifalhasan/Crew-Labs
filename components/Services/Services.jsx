@@ -24,6 +24,7 @@ const Services = () => {
 
   return (
     <motion.div
+      id="servics"
       className={`px-[2rem] lg:px-16 overflow-x-hidden  md:pt-0 pb-24  mx-auto ${styles.bg}`}
     >
       <div className=" px-4  mx-auto ">

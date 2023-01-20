@@ -1,35 +1,39 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { FaAlignRight, FaAngleRight, FaTimes } from "react-icons/fa";
 import styles from "../../../styles/Navbar.module.css";
 import Logo from "../../images/crew logo.svg";
+// hanle route
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navLink = [
     {
       name: "Web 3.0",
       id: 1,
-      href: "/servics",
+      href: "servics",
     },
     {
       name: "Features",
       id: 2,
-      href: "/features",
+      href: "features",
     },
     {
       name: "Team",
       id: 3,
-      href: "/team",
+      href: "team",
     },
     {
       name: "Contact Us",
       id: 4,
-      href: "/contact",
+      href: "contact",
     },
   ];
   const openNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+  const router = useRouter();
   return (
     <div className="px-6 lg:px-16 ">
       <nav className="bg-transparent sm:px-4 py-2.5  w-full  border-gray-200 ">
@@ -40,7 +44,7 @@ const Navbar = () => {
           </Link>
           <div className="flex md:order-2 relative">
             <Link
-              href="/roadmap"
+              href="/documention"
               className={`md:flex items-center hidden ${styles.navLink}`}
             >
               Documentation <FaAngleRight />
@@ -75,7 +79,7 @@ const Navbar = () => {
                   key={link.id}
                   className={`md:hover:bg-transparent hover:bg-blue-600 p-1 md:p-0 md:text-[#aeafb4] rounded-md`}
                 >
-                  <Link href={link.href} className={styles.navLink}>
+                  <Link href={"#" + link.href} className={styles.navLink}>
                     {link.name}
                   </Link>
                 </li>

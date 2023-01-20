@@ -61,7 +61,7 @@ const Team = () => {
 
   return (
     <>
-      <motion.div className="relative lg:px-16 pt-2">
+      <motion.div id="team" className="relative lg:px-16 pt-2">
         <div className={` px-6 mx-auto overflow-x-hidden`}>
           <div data-aos="fade-up" data-aos-duration="3000" className="heading">
             <p className="title">Who are we?</p>
