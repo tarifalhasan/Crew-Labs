@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "../../../styles/Hero.module.css";
 const Hero = () => {
   return (
-    <div className="pt-0 lg:px-16 pb-[3rem] md:pt-10 overflow-x-hidden">
+    <div className="pt-0 lg:px-16 pb-[3rem] md:pt-10 overflow-hidden">
       <div
         className="px-6  grid grid-cols-1"
         data-aos="zoom-out"
