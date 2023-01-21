@@ -4,7 +4,7 @@ Crew Labs
 
 ## Demo
 
-https://crew-labs-ymg9.vercel.app/
+https://crew-labs.vercel.app/
 
 ## Run Locally
 
