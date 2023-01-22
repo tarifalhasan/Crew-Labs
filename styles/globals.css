@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* face font */
-
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "Satoshi-Black";
   src: url("../public/Fonts/WEB/fonts/Satoshi-Black.woff2") format("woff2"),
@@ -50,7 +52,9 @@ body {
   z-index: 100;
   width: 100%;
 }
-
+.-webkit-fill-available {
+  width: -webkit-fill-available;
+}
 .feature-title {
   padding: 0px 35px;
 }

@@ -35,8 +35,8 @@ const Navbar = () => {
 
   const router = useRouter();
   return (
-    <div className="px-6 lg:px-16 ">
-      <nav className="bg-transparent sm:px-4 py-2.5  w-full  border-gray-200 ">
+    <div className="px-6 lg:px-16 fixed -webkit-fill-available z-50 container">
+      <nav className="bg-transparent sm:px-4   w-full  border-gray-200 ">
         <div className=" flex  flex-wrap items-center justify-between mx-auto">
           <Link href="/" className={`text-xl flex items-center ${styles.logo}`}>
             <Logo className="text-2xl" />
@@ -73,7 +73,7 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="	 z-10 flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
+            <ul className=" z-10 flex flex-col p-4 mt-4 bg-slate-900 rounded	 md:bg-transparent md:sticky absolute md:w-full w-[90%] left-[8px] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium animate__animated sm:animate__zoomIn">
               {navLink.map((link) => (
                 <li
                   key={link.id}
