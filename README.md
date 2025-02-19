@@ -38,7 +38,7 @@ Start the server
 
 ## Support
 
-For support, email tarifhasan674@gamil.com .
+
 
 ## Screenshots
 
